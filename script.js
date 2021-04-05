@@ -6,11 +6,11 @@ const stopButton = document.getElementsByClassName("stop")[0];
 const resetButton = document.getElementsByClassName("reset")[0];
 
 const listCounter = [];
+seconds.innerHTML = "00";
+tens.innerHTML = "00";
 
 startButton.addEventListener("click", () => {   
 
-    seconds.innerHTML = "00";
-    tens.innerHTML = "00";
     let count = setInterval(function() {
         let tensCounter = parseInt(tens.innerHTML);
 
